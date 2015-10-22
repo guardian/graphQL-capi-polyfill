@@ -1,0 +1,19 @@
+{
+  "name": "capi-graphql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Christopher Lloyd",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.3",
+    "express-graphql": "^0.4.0",
+    "graphql": "^0.4.9"
+  },
+  "devDependencies": {
+    "eslint": "^1.7.3"
+  }
+}
