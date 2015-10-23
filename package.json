@@ -5,11 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon -x babel-node index.js"
+    "start": "babel-node index.js"
   },
   "author": "Christopher Lloyd",
   "license": "ISC",
   "dependencies": {
+    "babel": "^5.8.23",
     "express": "^4.13.3",
     "express-graphql": "^0.4.0",
     "graphql": "^0.4.9",
