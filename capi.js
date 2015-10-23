@@ -27,7 +27,7 @@ function makeRequest(url) {
 function grabArticleData(article) {
     return {
         id: article.id,
-        webUrl: article.webUrl,
+        url: article.webUrl,
         sectionName: article.sectionName,
         headline: article.fields.headline,
         body: article.fields.main + article.fields.body,
@@ -38,7 +38,7 @@ function grabArticleData(article) {
 
 function grabImageData(asset) {
     return {
-      url: asset.typeData.secureFile,
+      url: asset.typeData.secureFile || asset.file,
       copyright: asset.typeData.copyright,
       alt: asset.typeData.altText,
       width: parseInt(asset.typeData.width, 10),

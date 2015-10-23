@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "run": ""
+    "run": "nodemon -x babel-node index.js"
   },
   "author": "Christopher Lloyd",
   "license": "ISC",
@@ -13,6 +13,7 @@
     "express": "^4.13.3",
     "express-graphql": "^0.4.0",
     "graphql": "^0.4.9",
+    "nodemon": "^1.7.3",
     "request": "^2.65.0"
   },
   "devDependencies": {

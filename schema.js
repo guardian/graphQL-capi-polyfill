@@ -53,7 +53,7 @@ var articleType = new GraphQLObjectType({
             type: new GraphQLNonNull(GraphQLString),
             description: 'The id of the article.',
         },
-        webUrl: {
+        url: {
             type: GraphQLString,
             description: 'The url of the article.',
         },
