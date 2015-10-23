@@ -20,7 +20,7 @@ Visit [http://localhost:3000](http://localhost:3000) in a browser.
 
 Here's some example queries.
 
-### Get the headline of a specific article
+#### Get the headline of a specific article
 ```
 {
 	article(path: "business/2015/oct/23/talktalk-cyber-attack-company-unsure-how-many-users-affected") {
@@ -29,7 +29,7 @@ Here's some example queries.
 }
 ```
 
-### Get the a few more details for a specific article
+#### Get the a few more details for a specific article
 
 ```
 {
@@ -41,7 +41,7 @@ Here's some example queries.
 }
 ```
 
-### Get related articles and their headlines
+#### Get related articles and their headlines
 
 ```
 {
@@ -56,7 +56,7 @@ Here's some example queries.
 }
 ```
 
-### Get the main image with a width of 1000px
+#### Get the main image with a width of 1000px
 
 ```
 {
@@ -72,7 +72,7 @@ Here's some example queries.
 }
 ```
 
-#Get the main image for the specific article at 1000px and the related articles at 200px
+#### Get the main image for the specific article at 1000px and the related articles at 200px
 
 ```
 {
@@ -96,7 +96,7 @@ Here's some example queries.
 }
 ```
 
-#Get the newest articles and their headlines
+#### Get the newest articles and their headlines
 
 ```
 {
@@ -107,7 +107,7 @@ Here's some example queries.
 }
 ```
 
-#The above image command but for all the newest articles
+#### The above image command but for all the newest articles
 
 ```
 {
