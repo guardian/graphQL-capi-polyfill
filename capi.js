@@ -46,7 +46,7 @@ function grabImageData(asset) {
     }
 }
 
-export function getArticle(path: String): Promise {
+export function getArticle(path: string): Promise {
     return makeRequest(CAPI_URL + "/" + path + "?show-fields=all").then((response) => {
         return new Promise((resolve,reject) => {
             resolve(grabArticleData(response.content));
@@ -54,7 +54,7 @@ export function getArticle(path: String): Promise {
     });
 }
 
-export function getRelatedArticles(path: String): Promise {
+export function getRelatedArticles(path: string): Promise {
     return makeRequest(CAPI_URL + "/" + path + "?show-fields=all&show-related=true").then((response) => {
         return new Promise((resolve,reject) => {
             resolve(response.relatedContent.map(grabArticleData));
@@ -70,7 +70,7 @@ export function getNewestArticles(): Promise {
     });
 }
 
-export function getMainArticleImage(path: String, width: number): Promise {
+export function getMainArticleImage(path: string, width: number): Promise {
     return makeRequest(CAPI_URL + "/" + path + "?show-elements=all").then((response) => {
         return new Promise((resolve,reject) => {
             var mainImages = response.content.elements
