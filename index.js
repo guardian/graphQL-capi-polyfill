@@ -1,10 +1,12 @@
+/* @flow */
+
 var express = require('express');
 var graphqlHTTP = require('express-graphql');
 var graphqlSchema = require('./schema.js');
 
 var app = express();
 
-app.use('/graphql', graphqlHTTP({ schema: graphqlSchema, graphiql: true }));
+app.use('/', graphqlHTTP({ schema: graphqlSchema, graphiql: true }));
 
 
 var server = app.listen(3000, function () {
