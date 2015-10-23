@@ -131,3 +131,9 @@ Here's some example queries.
 }
 
 ```
+
+## Todo
+
+ - DRY out the CAPI URL construction
+ - Use CAPI API keys
+ - Expand Schemas
