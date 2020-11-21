@@ -13,7 +13,7 @@
     "babel": "^5.8.23",
     "express": "^4.13.3",
     "express-graphql": "^0.4.0",
-    "graphql": "^0.4.9",
+    "graphql": "^0.13.2",
     "nodemon": "^1.7.3",
     "request": "^2.65.0"
   },
